@@ -1,0 +1,190 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v01",
+        "title": "POC_PASSP_KV_EXTRA_INLIN_SYNC",
+        "x-vb": {
+            "serviceType": "ics"
+        }
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/ics/ic/api/integration/v1/flows/rest"
+        }
+    ],
+    "paths": {
+        "/POC_PASSP_KV_EXTRA_INLIN_SYNC/1.0/execute": {
+            "post": {
+                "tags": [
+                    "Default Package/POC_PASSP_KV_EXTRA_INLIN_SYNC|01.00.0000",
+                    "Default Package"
+                ],
+                "operationId": "postPOC_PASSP_KV_EXTRA_INLIN_SYNC1_0Execute",
+                "parameters": [
+                    {
+                        "name": "tracker",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "upFile"
+                                ],
+                                "type": "object",
+                                "properties": {
+                                    "upFile": {
+                                        "type": "string",
+                                        "format": "binary"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "500": {
+                        "description": "Faults",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/APIInvocationError"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "A sample description of the Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/response-wrapper"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2Authentication": []
+                    },
+                    {
+                        "basicAuthentication": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "APIInvocationError": {
+                "type": "object",
+                "required": [
+                    "detail",
+                    "errorCode",
+                    "errorDetails",
+                    "title",
+                    "type"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "detail": {
+                        "type": "string"
+                    },
+                    "errorCode": {
+                        "type": "string"
+                    },
+                    "errorDetails": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "instance": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "errorPath": {
+                                    "type": "string"
+                                },
+                                "errorCode": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "errorCode",
+                                "errorPath",
+                                "instance",
+                                "title",
+                                "type"
+                            ]
+                        },
+                        "minItems": 1
+                    }
+                }
+            },
+            "response-wrapper": {
+                "type": "object",
+                "required": [
+                    "detectedDocumentTypes",
+                    "documentFields"
+                ],
+                "properties": {
+                    "detectedDocumentTypes": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "documentType": {
+                                    "type": "string"
+                                },
+                                "confidence": {
+                                    "type": "number"
+                                }
+                            },
+                            "required": [
+                                "confidence",
+                                "documentType"
+                            ]
+                        },
+                        "minItems": 1
+                    },
+                    "documentFields": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "fieldLabel": {
+                                    "type": "string"
+                                },
+                                "fieldValue": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "fieldLabel",
+                                "fieldValue"
+                            ]
+                        },
+                        "minItems": 1
+                    }
+                }
+            }
+        }
+    }
+}
