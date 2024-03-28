@@ -7,11 +7,11 @@
     },
     "bucketName": {
       "type": "string",
-      "defaultValue": "vbcsBucket"
+      "defaultValue": "xxxxxxxxx"
     },
     "compartmentId": {
       "type": "string",
-      "defaultValue": "ocid1.compartment.oc1..aaaaaaaa4x57dds5pvm5v4qnkukiqxpnasxsadyv5xi6nvoewjyh5sh75h7q"
+      "defaultValue": "xxxxxxxxx"
     },
     "country": {
       "type": "string"
@@ -59,7 +59,7 @@
     },
     "namespaceName": {
       "type": "string",
-      "defaultValue": "frsxwtjslf35"
+      "defaultValue": "xxxxxxxxx"
     },
     "nationality": {
       "type": "string"
