@@ -1,6 +1,6 @@
 {
-    "id": "ocid1.aidocumentprocessorjob.oc1.eu-frankfurt-1.amaaaaaauevftmqa6io2qpnh2y6jyysv4dqsplqkwpy6lvvpfro33jflqqya",
-    "compartmentId": "ocid1.compartment.oc1..aaaaaaaa4x57dds5pvm5v4qnkukiqxpnasxsadyv5xi6nvoewjyh5sh75h7q",
+    "id": "xxxxxxxxx",
+    "compartmentId": "xxxxxxxxx",
     "displayName": null,
     "features": [
         {
@@ -21,8 +21,8 @@
         "sourceType": "OBJECT_STORAGE_LOCATIONS",
         "objectLocations": [
             {
-                "namespaceName": "frsxwtjslf35",
-                "bucketName": "vbcsBucket",
+                "namespaceName": "xxxxxxxxx",
+                "bucketName": "xxxxxxxxx",
                 "objectName": "passport-sample.png"
             }
         ]
@@ -32,8 +32,8 @@
     "timeFinished": "2024-01-24T12:25:41.604Z",
     "percentComplete": 100,
     "outputLocation": {
-        "namespaceName": "frsxwtjslf35",
-        "bucketName": "vbcsBucket",
+        "namespaceName": "xxxxxxxxx",
+        "bucketName": "xxxxxxxxx",
         "prefix": "result"
     },
     "lifecycleState": "SUCCEEDED",
