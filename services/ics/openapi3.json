@@ -2,7 +2,7 @@
     "openapi": "3.0.0",
     "info": {
         "version": "v01",
-        "title": "POC_PASSP_KV_EXTRA_INLIN_SYNC",
+        "title": "xxxxxxxxx",
         "x-vb": {
             "serviceType": "ics"
         }
@@ -13,13 +13,13 @@
         }
     ],
     "paths": {
-        "/POC_PASSP_KV_EXTRA_INLIN_SYNC/1.0/execute": {
+        "/xxxxxxxxx/1.0/execute": {
             "post": {
                 "tags": [
-                    "Default Package/POC_PASSP_KV_EXTRA_INLIN_SYNC|01.00.0000",
+                    "Default Package/xxxxxxxxx|01.00.0000",
                     "Default Package"
                 ],
-                "operationId": "postPOC_PASSP_KV_EXTRA_INLIN_SYNC1_0Execute",
+                "operationId": "postxxxxxxxxxExecute",
                 "parameters": [
                     {
                         "name": "tracker",
