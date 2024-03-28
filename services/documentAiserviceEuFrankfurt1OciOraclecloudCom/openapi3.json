@@ -12,11 +12,11 @@
                 "authentication": {
                     "authenticated": {
                         "type": "http_signature_oci",
-                        "credentials": "vb_96698398-3c1a-4922-8608-24128c235b3e"
+                        "credentials": "xxxxxxxxx"
                     },
                     "anonymous": {
                         "type": "http_signature_oci",
-                        "credentials": "vb_eb872856-160a-43c3-a897-995054ce3d8c"
+                        "credentials": "xxxxxxxxx"
                     }
                 },
                 "anonymousAccess": true
