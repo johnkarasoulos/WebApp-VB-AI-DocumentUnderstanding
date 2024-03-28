@@ -12,11 +12,11 @@
                 "authentication": {
                     "authenticated": {
                         "type": "http_signature_oci",
-                        "credentials": "vb_fa842ad7-5236-431f-91aa-3117bd77fabd"
+                        "credentials": "xxxxxxxxx"
                     },
                     "anonymous": {
                         "type": "http_signature_oci",
-                        "credentials": "vb_12a182a0-7e16-45c0-85c4-68e41b73d19c"
+                        "credentials": "xxxxxxxxx"
                     }
                 },
                 "forceProxy": "always",
